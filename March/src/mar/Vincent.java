@@ -19,6 +19,15 @@ d.findElement(By.name("userName")).sendKeys("Admin");
 d.findElement(By.name("password")).sendKeys("mercury");
 d.findElement(By.name("login")).click();
 
+String expval="Find a Flight: Mercury Tours";
+String acval=d.getTitle();
+
+if(expval.equalsIgnoreCase(acval)){
+	System.out.println("passed");
+}else{
+	System.out.println("failed");
+}
+
 	
 }
 }
